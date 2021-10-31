@@ -16,20 +16,20 @@ My initial wireframes and database schemas were sketched on paper and when I was
 ## User Stories:
 
 ## Viewing & Navigation user stories:
-[Wireframes](wireframes/user-story-1.png)
+[!Shopper](wireframes/user-story-1.png)
 
 
 ## Registration & User Accounts user stories:
-[Wireframes](wireframes/user-story-2.png)
+![Registered user](wireframes/user-story-2.png)
 
 
 ## Sorting & Searching user stories:
-[Wireframes](wireframes/user-story-3.png)
+![Searching and sorting](wireframes/user-story-3.png)
 
 
-## Purchaing & Checkout user stories:
-[Wireframes](wireframes/user-story-4.png)
+## Purchasing & Checkout user stories:
+![Checkout](wireframes/user-story-4.png)
 
 
 ## Admin & Store Management user stories:
-[Wireframes](wireframes/user-story-5.png)
+![Admin](wireframes/user-story-5.png)
