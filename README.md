@@ -11,3 +11,25 @@ HoopLife aims to unite fans of basketball fashion and accessories around the wor
 My initial wireframes and database schemas were sketched on paper and when I was happy I was going in the correct direction I used [Balsamiq](https://balsamiq.com/wireframes/) to finalise my mockups for the front end. Having viewed the websites of major sporting Ecommerce players such as Nike and JD Sports, I decided I wanted my website to be simple with minimal but popular products that would sell while also give a retro feel to the design.
 
 * [Wireframes](wireframes/hooplife-wireframes.pdf)
+
+
+## User Stories:
+
+## Viewing & Navigation user stories:
+[Wireframes](wireframes/user-story-1.png)
+
+
+## Registration & User Accounts user stories:
+[Wireframes](wireframes/user-story-2.png)
+
+
+## Sorting & Searching user stories:
+[Wireframes](wireframes/user-story-3.png)
+
+
+## Purchaing & Checkout user stories:
+[Wireframes](wireframes/user-story-4.png)
+
+
+## Admin & Store Management user stories:
+[Wireframes](wireframes/user-story-5.png)
