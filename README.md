@@ -7,13 +7,13 @@ This project is an Ecommerce store for people who wish to view and purchase the 
 HoopLife aims to unite fans of basketball fashion and accessories around the world. We stock sell and ship the most coveted brands of in game and retro clothing any basketball fan could wish for. Come visit our website. 
 
 
-## Wireframes:
+# Wireframes:
 My initial wireframes and database schemas were sketched on paper and when I was happy I was going in the correct direction I used [Balsamiq](https://balsamiq.com/wireframes/) to finalise my mockups for the front end. Having viewed the websites of major sporting Ecommerce players such as Nike and JD Sports, I decided I wanted my website to be simple with minimal but popular products that would sell while also give a retro feel to the design.
 
 * [Wireframes](wireframes/hooplife-wireframes.pdf)
 
 
-## User Stories:
+# User Stories:
 
 ## Viewing & Navigation user stories:
 [!Shopper](wireframes/user-story-1.png)
@@ -33,3 +33,22 @@ My initial wireframes and database schemas were sketched on paper and when I was
 
 ## Admin & Store Management user stories:
 ![Admin](wireframes/user-story-5.png)
+
+
+# Data Modelling: 
+
+## Profiles App
+![user profile model](wireframes/userprofile-model.png)
+
+## Products App
+![Category model](wireframes/category-model.png)
+
+![Product model](wireframes/product-model.png)
+
+## Checkout App
+![Order model](wireframes/order-model.png)
+
+![Order Line Item model](wireframes/order-line-item-model.png)
+
+
+
