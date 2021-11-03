@@ -20,7 +20,7 @@ body {
 }
 
 .hero-message {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .shop-now-button {
@@ -91,5 +91,11 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-message {
+        margin-top: 180px;
     }
 }
