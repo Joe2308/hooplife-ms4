@@ -18,7 +18,8 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Kanit&family=Roboto&display=swap"
+          rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -44,7 +45,7 @@
       <div id="topnav" class="row nav-top bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
-              <img src="media/hooplife-logo3.png" height="90"
+              <img src="media/hooplife-logo3.png" height="80"
               alt="HoopLife logo">
           <span class="sr-only">Home</span>
             </a>
@@ -140,45 +141,42 @@
         <!-- Footer -->
         <footer>
           <div class="footer">
-              <div class="container-fluid">
-                  <div class="row no-gutters">
-                      <div class="col">
-                          <!--Social links-->
-                          <ul class="list-inline social-links">
-                              <li class="list-inline-item">
-                                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i
-                                          class="fab fa-facebook-square" aria-hidden="true"></i><span
-                                          class="sr-only">Facebook</span></a>
-                              </li>
-                              <li class="list-inline-item">
-                                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i
-                                          class="fab fa-instagram-square" aria-hidden="true"></i><span
-                                          class="sr-only">Instagram</span></a>
-                              </li>
-                              <li class="list-inline-item">
-                                  <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i
-                                          class="fab fa-twitter-square" aria-hidden="true"></i><span
-                                          class="sr-only">Twitter</span></a>
-                              </li>
-                              <li class="list-inline-item">
-                                  <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i
-                                          class="fab fa-youtube-square" aria-hidden="true"></i><span
-                                          class="sr-only">YouTube</span></a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <!--Copyright-->
-                  <div class="row no-gutters">
-                      <div class="col copyright text-center">
-                          <p class="copy-right"><small>
-                                  © 2021 Copyright HoopLife
-                              </small></p>
-                      </div>
-                  </div>
+            <div class="container-fluid foot">
+              <div class="row no-gutters">
+                <div class="col">
+                  <!--Social links-->
+                  <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i
+                          class="fab fa-facebook-square" aria-hidden="true"></i><span
+                          class="sr-only">Facebook</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i
+                          class="fab fa-instagram-square" aria-hidden="true"></i><span
+                          class="sr-only">Instagram</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i class="fab fa-twitter-square"
+                          aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i
+                          class="fab fa-youtube-square" aria-hidden="true"></i><span class="sr-only">YouTube</span></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <!--Copyright-->
+              <div class="row no-gutters">
+                <div class="col copyright text-center">
+                  <p class="copy-right"><small>
+                      © 2021 Copyright HoopLife
+                    </small></p>
+                </div>
+              </div>
+            </div>
           </div>
-  
-      </footer>
+        </footer>
  </body>
 </html>
