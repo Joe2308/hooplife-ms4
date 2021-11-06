@@ -115,6 +115,10 @@ body {
     .header-container {
         padding-top: 155px;
     }
+
+    .split-text {
+        padding: 15px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -123,16 +127,16 @@ body {
        font-size: 30px;
     }
 
+    .heading-container {
+        display: none;
+    }
+
     .home-responsive {
         margin-top: 55px !important;
     }
 
     .reverse { 
         display: flex; flex-flow: column-reverse; 
-    }
-
-    .split-home {
-        background-color: #fff;
     }
 
     .btn {
