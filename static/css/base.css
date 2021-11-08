@@ -33,6 +33,16 @@ body {
     background-color: #eaeaea;
 }
 
+.card img {
+    height: 200px !important;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  
+  .card-fixed {
+    max-height: 400px !important;
+  }
+
 /* from Bulma */
 .icon {
     align-items: center;
