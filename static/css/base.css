@@ -14,7 +14,6 @@ body {
     background: url('/media/hero.jpeg') no-repeat center center;
     background-size: cover;
     min-height: 750px;
-    margin-top: 50px;
 }
 
 .hero-home-2 {
@@ -90,6 +89,11 @@ body {
     color: white;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 /* Nav Links */
 .text-black {
     color: #000 !important;
@@ -123,7 +127,7 @@ body {
     }
 
     .header-container {
-        padding-top: 155px;
+        padding-top: 205px;
     }
 
     .split-text {
@@ -156,12 +160,17 @@ body {
 
     .hero-home {
         min-height: 400px;
-        margin-top: 55px;
         background-position-x: 25%; 
     }
 
     .header-container {
-        padding-top: 110px;
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container {
+        padding-top: 165px;
     }
 }
 
