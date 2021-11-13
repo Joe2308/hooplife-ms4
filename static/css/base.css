@@ -173,6 +173,11 @@ a.category-badge > span.badge:hover {
     }
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 @media (max-width: 500px) {
     .header-container {
         padding-top: 165px;
