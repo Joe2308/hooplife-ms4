@@ -178,6 +178,12 @@ a.category-badge > span.badge:hover {
        font-size: 30px;
     }
 
+    dl,
+    ol,
+    ul {
+        padding: 0 !important;
+    }
+
     .heading-container {
         display: none;
     }
