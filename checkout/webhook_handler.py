@@ -1,10 +1,10 @@
-from django.http import HttpResponse
-
-from .models import Order, OrderLineItem
-from products.models import Product
-
 import json
 import time
+from django.http import HttpResponse
+
+from products.models import Product
+from .models import Order, OrderLineItem
+
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
@@ -63,7 +63,8 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: Verified \
+                    order already in database',
                 status=200)
         else:
             order = None
