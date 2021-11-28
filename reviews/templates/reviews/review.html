@@ -14,5 +14,24 @@
                 <h1 class="hero-message display-4 logo-font text-black">
                     Customer Reviews
                 </h1>
+                <hr>
+                <div class="container">
+                    {% for review in reviews %}
+                <div class="row">
+                    <div class="col-12">
+                       <h3> {{ review.title }} </h3>
+                    </div>
+                    <div class="col-12">
+                        <span><p>Rating: {{ review.rating }}</p></span>
+                    </div>
+                    <div class="col-12">
+                       <p> {{ review.body }} </p>
+                    </div>
+                    <div class="col-12">
+                        {{ review.date }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
 
 {% endblock %}
