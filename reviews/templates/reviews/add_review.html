@@ -10,7 +10,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <div class="container">
         <h2 class="logo-font text-center mb-4 mt-4">Add Review</h2>
         <div class="row">
@@ -26,7 +25,7 @@
               <form method="POST" action="{% url 'add_review' product.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-              <div class="text-right">
+              <div class="text-right mb-4">
                   <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Cancel</a>
                   <button class="btn btn-black rounded-0" type="submit">Add Review</button>
               </div>
@@ -43,7 +42,11 @@
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
+                <div class="text-center mt-5">
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-black rounded-0">Buy Again</a>
+                </div>
             </div>
-        </div>
+         </div>
+       </div>
     </div>
 {% endblock %}
