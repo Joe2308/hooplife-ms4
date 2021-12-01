@@ -3,16 +3,8 @@ from .models import Review
 from .forms import Add_ReviewForm
 from django.contrib import messages
 from products.models import Product
+from profiles.models import UserProfile
 from django.urls import reverse
-
-
-def reviews(request):
-    ''' View to return review page '''
-    reviews = Review.objects.all()
-    context = {
-        'reviews': reviews,
-    }
-    return render(request, 'reviews/review.html', context)
 
 
 def add_review(request, product_id):
@@ -21,7 +13,10 @@ def add_review(request, product_id):
     if request.method == 'POST':
         form = Add_ReviewForm(request.POST)
         if form.is_valid():
-            form.save()
+            review = form.save()
+            review.product = product
+            review.user = request.user
+            review.save()
             messages.success(request, 'Successfully added review!')
             return redirect(reverse('product_detail', args=[product.id]))
     form = Add_ReviewForm()

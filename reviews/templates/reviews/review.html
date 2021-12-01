@@ -15,23 +15,15 @@
                     Customer Reviews
                 </h1>
                 <hr>
-                <div class="container">
-                    {% for review in reviews %}
-                <div class="row">
-                    <div class="col-12">
-                       <h3> {{ review.title }} </h3>
+                <div class="" id="">
+                    {% for review in reviews.all %}
+                    <div class="card card-body mb-2">
+                        <h5 class="card-title">{{ review.title }}</h5>
+                        <p><small class="text-muted">{{ review.rating }} / 5 <i class="fas fa-star"></i></small></p>
+                        <p class="card-text">{{ review.body }}</p>
                     </div>
-                    <div class="col-12">
-                        <span><p>Rating: {{ review.rating }}</p></span>
-                    </div>
-                    <div class="col-12">
-                       <p> {{ review.body }} </p>
-                    </div>
-                    <div class="col-12">
-                        {{ review.date }}
-                    </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
-            </div>
+            
 
 {% endblock %}
