@@ -104,17 +104,7 @@
                                 </a>
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
                                 <div>
-                                    <a href="{% url 'add_review' product.id %}" class="btn btn-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Add Review</a>
-                                    <a href="" class="btn btn-outline-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Read Reviews</a>
-                                    <hr>
-                                <h1>Reviews</h1>
-                                <div>
-                                    {% for review in reviews %}
-                                    <p>{{ review.title }}</p>
-                                    <p>{{ review.rating }}</p>
-                                    <p>{{ review.body }}</p>
-                                    {% endfor %}
-                                </div>
+                                    <a href="#collapseReview" class="btn btn-black rounded-0 mt-5" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="far fa-star"></i> Reviews</a>
                                 </div>
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -124,6 +114,54 @@
                 </div>
             </div>
         </div>
+
+        <div class="collapse" id="collapseReview">
+            {% if reviews %}
+                {% if request.user.is_authenticated %}
+                <div class="text-center">
+                    <a href="{% url 'add_review' product.id %}" class="btn btn-black rounded-0 mb-5"><i class="fas fa-plus"></i> Add Review</a>
+                    </div>
+                {% else %}
+                <div class="text-center">
+                    <h3 class="text-center mt-4">Please sign in to leave a review!</h3>
+                    <a href="{% url 'account_login' %}" class="btn btn-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Sign in</a>
+                    <a href="{% url 'account_signup' %}" class="btn btn-outline-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Register</a>
+                    </div>
+                {% endif %}
+                <h1 class="text-center">Reviews</h1>
+                <hr>
+                <div class="row">
+                {% for review in reviews %}
+                    <div class="card card-3 col-sm-6 col-md-6 col-lg-4 col-xl-3 m-2">
+                        <div class="card-body">
+                        <h5 class="card-title">{{ review.title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</h6>
+                        <p class="card-text">{{ review.body }}</p>
+                        <p><i class="fas fa-user mr-1"></i> Added by: <em>{{ review.user }}</em></p>
+                        {% if request.user.is_authenticated %}
+                            <small>
+                            <a href="#" class="card-link">Edit</a>
+                            <a class="text-danger" href="#" class="card-link">Delete</a>
+                            </small>
+                        {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            {% elif request.user.is_authenticated %}
+                <h2 class="text-center">Be first to review this product</h2>
+                <div class="text-center">
+                <a href="{% url 'add_review' product.id %}" class="btn btn-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Add Review</a>
+                </div>
+            {% else %}
+                <div class="text-center">
+                    <h3 class="text-center mt-4">Please sign in to leave a review!</h3>
+                    <a href="{% url 'account_login' %}" class="btn btn-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Sign in</a>
+                    <a href="{% url 'account_signup' %}" class="btn btn-outline-black rounded-0 mt-5 mb-5"><i class="fas fa-plus"></i> Register</a>
+                    </div>
+            {% endif %}
+        </div>
+
     </div>
 {% endblock %}
 

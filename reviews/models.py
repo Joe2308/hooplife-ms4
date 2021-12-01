@@ -4,8 +4,16 @@ from products.models import Product
 
 # Create your models here.
 class Review(models.Model):
+
+    choices = (
+        (1, "1"),
+        (2, "2"),
+        (3, "3"),
+        (4, "4"),
+        (5, "5"),
+    )
     title = models.CharField(max_length=100)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.IntegerField(choices=choices, default=1)
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, default='')
