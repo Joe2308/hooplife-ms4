@@ -1,10 +1,15 @@
-from django.shortcuts import render, reverse, redirect, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, HttpResponseRedirect,
+    get_list_or_404, get_object_or_404
+)
 from products.models import Product
 from profiles.models import UserProfile
 from wishlist.models import Wishlist, WishlistItem
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required()
 def wishlist(request):
     """
     A view to render the users wishlist
@@ -23,9 +28,10 @@ def wishlist(request):
     return render(request, 'wishlist/wishlist.html', context=context)
 
 
+@login_required()
 def add_to_wishlist(request, product_id):
     """
-    A view to a product from the store to the user's
+    A view to add a product from the store to the user's
     wishlist
     """
     product = get_object_or_404(Product, pk=product_id)
@@ -40,3 +46,22 @@ def add_to_wishlist(request, product_id):
         wishlist.products.add(product)
         messages.success(request, 'product added to wishlist!')
         return redirect(reverse('product_detail', args=[product.id]))
+
+
+@login_required()
+def remove_from_wishlist(request, product_id):
+    """
+    A view to remove products from the user's wishlist
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    profile = get_object_or_404(UserProfile, user=request.user)
+
+    wishlist, created = Wishlist.objects.get_or_create(user=profile)
+    wishlist.products.remove(product)
+    messages.success(request, 'product removed from wishlist')
+    return HttpResponseRedirect(request.META['HTTP_REFERER'])
+    # # wishlist_count = Wishlist.objects.filter(user=profile).count()
+    # if wishlist.products.count == 0:
+    #     Wishlist.delete(wishlist=wishlist, user=profile)
+    #     messages.success(request, 'All products removed from wishlist!')
+    #     return HttpResponseRedirect(request.META['HTTP_REFERER'])
