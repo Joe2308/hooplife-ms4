@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<h1 class="text-center my-5">My Wishlist</h1>
+
+{% if wishlist %}
+{% for product in wishlist.products.all %}
+{{ product.name }}
+{{ product.description }}
+{{ product.price }}
+{% endfor %}
+{% endif %}
+
+{% endblock %}

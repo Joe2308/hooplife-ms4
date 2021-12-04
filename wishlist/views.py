@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, HttpResponse
 from products.models import Product
 from profiles.models import UserProfile
 from wishlist.models import Wishlist, WishlistItem
