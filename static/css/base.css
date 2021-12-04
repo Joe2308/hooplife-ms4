@@ -298,7 +298,7 @@ a.category-badge > span.badge:hover {
 
     .btn {
         font-size: 16px;
-        min-width: 120px;
+        /* min-width: 120px; */
     }
 
     .hero-home {
@@ -315,13 +315,13 @@ a.category-badge > span.badge:hover {
         cursor: pointer;
     }
 
-    .change-qty {
+    /* .change-qty {
         position: absolute;
     }
 
     .qty {
         margin-bottom: 30px;
-    }
+    } */
 }
 
 
