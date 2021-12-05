@@ -10,3 +10,4 @@ node_modules/
 *.pyc
 db.json
 reviews.json
+deps.txt
