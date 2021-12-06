@@ -40,7 +40,7 @@ def delete_review(request, product_id, review_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry only store owners can do that!')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     review = Review.objects.get(product=product, pk=review_id)
     review.delete()
