@@ -5,9 +5,11 @@
   <head>
 
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+      content="SNEAKERFANS brings together a community of sneaker lovers and collectors across the world. Sign up to create your own content">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
     {% block extra_meta %}
@@ -158,7 +160,7 @@
 
     <!-- Load messages on all templates -->
     {% block postloadjs %}
-      <script type="text/javascript">
+      <script>
         $('.toast').toast('show');
       </script>
     {% endblock %}
