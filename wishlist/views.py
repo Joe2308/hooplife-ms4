@@ -1,12 +1,12 @@
 from django.shortcuts import (
-    render, redirect, reverse, HttpResponse, HttpResponseRedirect,
-    get_list_or_404, get_object_or_404
+    render, redirect, reverse, HttpResponseRedirect,
+    get_object_or_404
 )
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from products.models import Product
 from profiles.models import UserProfile
 from wishlist.models import Wishlist, WishlistItem
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 
 
 @login_required()
@@ -40,7 +40,7 @@ def add_to_wishlist(request, product_id):
     wishlist, created = Wishlist.objects.get_or_create(user=profile)
 
     if WishlistItem.objects.filter(product=product).exists():
-        messages.error(request,'Product already in your wishlist!')
+        messages.error(request, 'Product already in your wishlist!')
         return redirect(reverse('product_detail', args=[product.id]))
     else:
         wishlist.products.add(product)
