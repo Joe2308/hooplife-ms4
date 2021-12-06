@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -14,36 +14,38 @@
 <h1 class="text-center my-5">My Wishlist</h1>
 
 {% if wishlist %}
-{% for product in wishlist.products.all %}
-<div class="container">
-<div class="card mb-3">
-    <div class="row no-gutters mt-4">
-      <div class="col-md-4">
-        <img src="{{ product.image.url }}" class="card-img" alt="{{ product.name }}">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h3 class="card-title">{{ product.name }}</h3>
-          <p class="card-text">{{ product.description }}</p>
-          <p class="card-text"><small class="text-muted">${{ product.price }}</small></p>
+  {% for product in wishlist.products.all %}
+    <div class="container">
+      <div class="card mb-3">
+        <div class="row no-gutters mt-4">
+          <div class="col-md-4">
+            <img src="{{ product.image.url }}" class="card-img" alt="{{ product.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">{{ product.name }}</h3>
+              <p class="card-text">{{ product.description }}</p>
+              <p class="card-text"><small class="text-muted">${{ product.price }}</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-4">
+          <a href="{% url 'remove_from_wishlist' product.id %}" class="btn btn-black rounded-0 mt-5" role="button"><i
+              class="far fa-star" aria-hidden="true"></i> Remove From wishlist</a>
+          <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-5" role="button"><i
+              class="far fa-star" aria-hidden="true"></i> Add To Bag</a>
         </div>
       </div>
     </div>
-    <div class="text-center mb-4">
-    <a href="{% url 'remove_from_wishlist' product.id %}" class="btn btn-black rounded-0 mt-5" role="button"><i class="far fa-star"></i> Remove From wishlist</a>
-    <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-black rounded-0 mt-5" role="button"><i class="far fa-star"></i> Add To Bag</a>
-</div>
-  </div>
-</div>
-{% endfor %}
+  {% endfor %}
 {% else %}
-<p class="mb-5">Your Wish list is empty</p>
-<a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">
-<span class="icon">
-<i class="fas fa-chevron-left"></i>
-</span>
-<span class="text-uppercase">Keep Shopping</span>
-</a>
+  <p class="mb-5">Your Wish list is empty</p>
+  <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">
+    <span class="icon">
+      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </span>
+    <span class="text-uppercase">Keep Shopping</span>
+  </a>
 {% endif %}
 
 {% endblock %}

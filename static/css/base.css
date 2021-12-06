@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+/* Navbar */
 .fixed-top,
 .navbar {
     background-color: #eaeaea !important;
@@ -19,6 +20,7 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
+/* Home page hero images */
 .hero-home {
     background: url('/media/hero.jpeg') no-repeat center center;
     background-size: cover;
@@ -41,37 +43,38 @@ body {
     background-color: #eaeaea;
 }
 
+/* Image cards keep same heights */
 .card img {
     height: 200px !important;
     -o-object-fit: contain;
     object-fit: contain;
-  }
-  
-  .card-fixed {
-    max-height: 400px !important;
-  }
+}
 
-  .card2 img {
+.card-fixed {
+    max-height: 400px !important;
+}
+
+.card2 img {
     height: 300px !important;
     -o-object-fit: contain;
     object-fit: contain;
-  }
-  
-  .card-fixed2 {
-    max-height: 400px !important;
-  }
+}
 
-  .card-3 {
+.card-fixed2 {
+    max-height: 400px !important;
+}
+
+.card-3 {
     margin-bottom: 25px !important;
     height: 300px !important;
     overflow-y: auto;
     -o-object-fit: contain;
     object-fit: contain;
-  }
+}
 
-  .bg-type {
+.bg-type {
     background-color: #eaeaea !important;
-  }
+}
 
 /* from Bulma */
 .icon {
@@ -86,6 +89,7 @@ body {
     width: fit-content;
 }
 
+/* buttons */
 .shop-now-button {
     background: black;
     color: white;
@@ -120,7 +124,7 @@ body {
     color: white;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -163,8 +167,8 @@ a.category-badge > span.badge:hover {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    color: #6c757d;
 }
 
 .allauth-form-inner-content input {
@@ -182,8 +186,8 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -200,18 +204,18 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
 }
 
 /* Product Form */
@@ -247,9 +251,9 @@ a.category-badge > span.badge:hover {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -288,7 +292,8 @@ a.category-badge > span.badge:hover {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 
@@ -300,7 +305,7 @@ a.category-badge > span.badge:hover {
         height: calc(100vh - 116px);
     }
 
-     #delivery-banner h4 {
+    #delivery-banner h4 {
         font-size: 1.2rem;
     }
 
@@ -318,8 +323,8 @@ a.category-badge > span.badge:hover {
     }
 
     .hero-message {
-       margin-top: 120px;
-       font-size: 30px;
+        margin-top: 120px;
+        font-size: 30px;
     }
 
     dl,
@@ -334,23 +339,15 @@ a.category-badge > span.badge:hover {
         margin-top: 55px !important;
     }
 
-    .reverse { 
-        display: flex; flex-flow: column-reverse; 
+    .reverse {
+        display: flex;
+        flex-flow: column-reverse;
     }
-
-    /* .btn {
-        font-size: 16px;
-        min-width: 120px;
-    } */
 
     .hero-home {
         min-height: 400px;
-        background-position-x: 25%; 
+        background-position-x: 25%;
     }
-
-    /* .header-container {
-        padding-top: 100px;
-    } */
 
     .update-link,
     .remove-item {
@@ -358,14 +355,8 @@ a.category-badge > span.badge:hover {
     }
 }
 
-
-/* @media (max-width: 500px) {
-    .header-container {
-        padding-top: 165px;
-    }
-} */
-
 @media (max-width: 320px) {
+
     .nav-link,
     i {
         font-size: 14px !important;
