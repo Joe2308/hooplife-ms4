@@ -9,6 +9,8 @@ from profiles.models import UserProfile
 from wishlist.models import Wishlist, WishlistItem
 
 
+# Credit idea for wishlist https://youtu.be/OgA0TTKAtqQ
+# Also based on slack research
 @login_required()
 def wishlist(request):
     """

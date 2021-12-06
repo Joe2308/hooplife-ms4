@@ -3,6 +3,7 @@ from profiles.models import UserProfile
 from products.models import Product
 
 
+# Wislist model based on slack research
 class Wishlist(models.Model):
     user = models.OneToOneField(
         UserProfile, null=False, blank=False,

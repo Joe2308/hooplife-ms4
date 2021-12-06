@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 
 
+# Credit idea for Reviews https://youtu.be/IVyc06bASSg
 @login_required
 def add_review(request, product_id):
     ''' View to add reviews '''
@@ -36,7 +37,7 @@ def add_review(request, product_id):
 
 @login_required()
 def delete_review(request, product_id, review_id):
-    '''Delete a product from the store'''
+    '''Allow admin to delete user reviews'''
     if not request.user.is_superuser:
         messages.error(request, 'Sorry only store owners can do that!')
         return redirect(reverse('home'))
