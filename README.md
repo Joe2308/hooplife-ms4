@@ -6,6 +6,8 @@ This project is an Ecommerce store for people who wish to view and purchase the 
 
 HoopLife aims to unite fans of basketball fashion and accessories around the world. We stock, sell and ship the most coveted brands of in game and retro clothing any basketball fan could wish for. Come visit our website. ## [HoopLife](https://ms4-hooplife.herokuapp.com/)
 
+![HoopLife](wireframes/home-responsive.png)
+
 # CONTENT QUICK LINKS
 ## [UX](#wireframes)
 ## [FEATURES](#available-features)
@@ -232,6 +234,32 @@ I also used photoshop to design the company logo which is a combination of a bas
 ### Other themes
 1. Use of relevant font awesome icons to add a professional touch
 1. Free delivery banner based on shopping bag total to urge user's to purchase more products
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+
+# AVAILABLE FEATURES
+
+### Navbar
+The nav bar is fixed to enhance user experience.
+Drop down menus have been incorporated for User account links and Product links.
+Users can shop by, price, rating and category.
+
+### Home
+The home page is laid out with eye catching hero images and call to action buttons to encourage users
+to start browsing and adding products to their bag. 
+![HoopLife](wireframes/home-nav-responsive.png)
+
+### All Products
+The The all products page uses bootstrap cards to render product images and details to the page. Each card can be clicked and this brings the user to the product details page. 
+![HoopLife](wireframes/products-responsive.png)
+
+### Product Details
+When a user clicks on a product they are brought to the product details page where they have the option of choosing quantities and adding the product to their shopping bag. There is also the option for users to read reviews on this page if they exist or adding a review if they are a logged in user. Logged in users can also add products to their wishlist from the product details page. The wishlist can then be view in their account dropdown.
+![HoopLife](wireframes/product-detail-responsive.png)
+
+
 
 
 # Data Modelling: 
