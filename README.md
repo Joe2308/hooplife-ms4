@@ -249,18 +249,76 @@ Users can shop by, price, rating and category.
 ### Home
 The home page is laid out with eye catching hero images and call to action buttons to encourage users
 to start browsing and adding products to their bag. 
+
 ![HoopLife](wireframes/home-nav-responsive.png)
 
 ### All Products
-The The all products page uses bootstrap cards to render product images and details to the page. Each card can be clicked and this brings the user to the product details page. 
+The all products page uses bootstrap cards to render product images and details to the page. Each card can be clicked and this brings the user to the product details page. 
+
 ![HoopLife](wireframes/products-responsive.png)
 
 ### Product Details
 When a user clicks on a product they are brought to the product details page where they have the option of choosing quantities and adding the product to their shopping bag. There is also the option for users to read reviews on this page if they exist or adding a review if they are a logged in user. Logged in users can also add products to their wishlist from the product details page. The wishlist can then be view in their account dropdown.
+
 ![HoopLife](wireframes/product-detail-responsive.png)
 
+### Profile 
+The profile page shows the user's order history and also default delivery details with the option to update the delivery details form. 
+
+![HoopLife](wireframes/profile.png)
+
+### Product Management
+A superuser has the addition of a link to product management in their account, where they can directly add, edit or delete products using the product management form. I have implemented some defensive programming using a bootstrap modal to prevent deleting reviews by accident.
+
+![HoopLife](wireframes/product-management.png)
+
+### Wishlist
+A logged in user can add items to a my wishlist template where they can be saved to be added to their shopping bag at a later date. Wishlist items can also be removed.
+
+![HoopLife](wireframes/wishlist.png)
+
+### Reviews
+Non logged in users have the option to read reviews for each product and logged in users can review specific products using the add review form. Superusers also have the ability to delete reviews if they do not meet the code of conduct. I have implemented some defensive programming to prevent deleting reviews by accident.
+
+![HoopLife](wireframes/review.png)
+![HoopLife](wireframes/review-form.png)
+
+### Shopping Bag
+Website vistitors and authenticated users alike can add products to their shopping bag and adjust quantities. 
+
+![SNEAKERFANS](wireframes/bag.png)
+
+### Checkout
+Website vistitors and authenticated users alike can securely checkout using Stipe. An instance of the user's delivery details for that order is automatically saved to users profile page.
+
+![SNEAKERFANS](wireframes/checkout.png)
+
+### Sign Up
+New user's may sign up for an account for a better user experience and also to access some features such as saving checkout details, adding reviews and creating wishlists. I have used crispy forms to render a more attractive template form.
+
+![SNEAKERFANS](wireframes/sign-up.png)
+
+### Log in
+Returning users may log in using built in Django allauth functionality. Crispy forms has been used all forms on the website.
+
+![SNEAKERFANS](wireframes/log-in.png)
+
+### Footer
+I have added social media links and contact details in the footer. All social media icons are clickable and work in external tabs.
+I also added copyright details.
+
+### Confirmation Emails
+Users will be sent a confirmation email that their order has been received after the checkout process.
 
 
+## Features to add for future releases:
+There are some features that I would love to implement on future releases:
+
+1. #### Social Media Sign Functionality:
+Allow returning user's to sign in more quickly and securely using social accounts.
+2. #### Suggested Products:
+Suggest products to returning users based on their order history.
+3. 
 
 # Data Modelling: 
 
