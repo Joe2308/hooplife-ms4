@@ -17,7 +17,6 @@ def wishlist(request):
     A view to render the users wishlist
     """
     wishlist = None
-    # profile = get_object_or_404(UserProfile, user=request.user)
     try:
         wishlist = Wishlist.objects.get(user=request.user)
     except Wishlist.DoesNotExist:
@@ -37,11 +36,12 @@ def add_to_wishlist(request, product_id):
     wishlist
     """
     product = get_object_or_404(Product, pk=product_id)
-    # profile = get_object_or_404(UserProfile, user=request.user)
 
     wishlist, created = Wishlist.objects.get_or_create(user=request.user)
 
-    if WishlistItem.objects.filter(wishlist=wishlist, product=product).exists():
+    if WishlistItem.objects.filter(
+        wishlist=wishlist, product=product
+    ).exists():
         messages.error(request, 'Product already in your wishlist!')
         return redirect(reverse('product_detail', args=[product.id]))
     else:
@@ -56,14 +56,8 @@ def remove_from_wishlist(request, product_id):
     A view to remove products from the user's wishlist
     """
     product = get_object_or_404(Product, pk=product_id)
-    # profile = get_object_or_404(UserProfile, user=request.user)
 
     wishlist, created = Wishlist.objects.get_or_create(user=request.user)
     wishlist.products.remove(product)
     messages.success(request, 'product removed from wishlist')
     return HttpResponseRedirect(request.META['HTTP_REFERER'])
-    wishlist_count = Wishlist.objects.filter(user=request.user).count()
-    if wishlist.products.count == 0:
-        Wishlist.delete(wishlist=wishlist, user=request.user)
-        messages.success(request, 'All products removed from wishlist!')
-        return HttpResponseRedirect(request.META['HTTP_REFERER'])
