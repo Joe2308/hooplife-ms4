@@ -1,17 +1,15 @@
 from django.db import models
-from profiles.models import UserProfile
+from django.contrib.auth.models import User
 from products.models import Product
 
 
 # Wislist model based on slack research
 class Wishlist(models.Model):
     user = models.OneToOneField(
-        UserProfile, null=False, blank=False,
+        User,
         on_delete=models.CASCADE, related_name='wishlist'
         )
-    products = models.ManyToManyField(
-        Product, default="", through='WishlistItem'
-        )
+    products = models.ManyToManyField(Product, through='WishlistItem')
 
     def __str__(self):
         return f'Wishlist ({self.user})'
@@ -19,11 +17,9 @@ class Wishlist(models.Model):
 
 class WishlistItem(models.Model):
     wishlist = models.ForeignKey(
-        Wishlist, null=False, blank=False, on_delete=models.CASCADE,
-        related_name='wishlist_items')
+        Wishlist, on_delete=models.CASCADE)
     product = models.ForeignKey(
-        Product, null=False, blank=False, on_delete=models.CASCADE,
-        related_name='wishlist_products')
+        Product, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.product.name

@@ -30,7 +30,7 @@ My initial wireframes and database schemas were sketched on paper and when I was
 # User Stories:
 
 ## Viewing & Navigation user stories:
-[!Shopper](wireframes/user-story-1.png)
+![Shopper](wireframes/user-story-1.png)
 
 
 ## Registration & User Accounts user stories:
