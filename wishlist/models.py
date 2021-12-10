@@ -6,10 +6,10 @@ from products.models import Product
 # Wislist model based on slack research
 class Wishlist(models.Model):
     user = models.OneToOneField(
-        User,
-        on_delete=models.CASCADE, related_name='wishlist'
-        )
-    products = models.ManyToManyField(Product, through='WishlistItem')
+        User, null=False, blank=False,
+        on_delete=models.CASCADE, related_name='wishlist')
+    products = models.ManyToManyField(
+        Product, default="", through='WishlistItem')
 
     def __str__(self):
         return f'Wishlist ({self.user})'
@@ -17,9 +17,11 @@ class Wishlist(models.Model):
 
 class WishlistItem(models.Model):
     wishlist = models.ForeignKey(
-        Wishlist, on_delete=models.CASCADE)
+        Wishlist, null=False, blank=False, on_delete=models.CASCADE,
+        related_name='wishlist_items')
     product = models.ForeignKey(
-        Product, on_delete=models.CASCADE)
+        Product, null=False, blank=False, on_delete=models.CASCADE,
+        related_name='wishlist_products')
 
     def __str__(self):
         return self.product.name
