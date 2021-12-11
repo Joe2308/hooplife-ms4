@@ -590,15 +590,17 @@ Once these settings are implemented, AWS needs to be connected to Django using t
 
 # CODE CREDITS
 
-## [Reviews](https://codepen.io/Sohail05/pen/yOpeBm)
+## [Reviews](https://youtu.be/IVyc06bASSg)
 I used YouTube tutorials and slack research to get good ideas for my review model.
 
 ## [Wishlist](https://youtu.be/OgA0TTKAtqQ)
 I used YouTube tutorials and slack research to get good ideas for my wishlist model.
 
 ## [Stack overflow](https://stackoverflow.com/)
+I used Stack overflow for advice when I was stuck on a problem.
 
 ## [Slack](https://app.slack.com/client/T0L30B202)
+Fellow students offered excellent advice and solution on the code institue thread on Slack.
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
