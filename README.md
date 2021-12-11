@@ -345,7 +345,7 @@ The site map was designed using [Lucid Chart](https://www.lucidchart.com/pages/)
 
 # Database Schema: 
 
-![Database ERD](wireframes/db-schema.png)
+![Database ERD](wireframes/erd.png)
 
 ## Profiles App
 ![user profile model](wireframes/userprofile-model.png)
