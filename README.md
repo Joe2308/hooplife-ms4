@@ -588,4 +588,33 @@ Once these settings are implemented, AWS needs to be connected to Django using t
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
 
+# CODE CREDITS
+
+## [Reviews](https://codepen.io/Sohail05/pen/yOpeBm)
+I used YouTube tutorials and slack research to get good ideas for my review model.
+
+## [Wishlist](https://youtu.be/OgA0TTKAtqQ)
+I used YouTube tutorials and slack research to get good ideas for my wishlist model.
+
+## [Stack overflow](https://stackoverflow.com/)
+
+## [Slack](https://app.slack.com/client/T0L30B202)
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+# MY ACKNOWLEDGEMENTS
+1. I would like to acknowledge my mentor [Guido Cecilio](https://code-institute-room.slack.com/team/U4ALPK7UG) for his help with keeping the design consistent and also for his guidance on getting my add to wishlist functionality correct.
+1. I would like to acknowledge [Natasha Clerkin](https://github.com/natashaclerkin/singularartistsMS1) for inspiration from her fantastic README.md file. 
+1. I would like to acknowledge [Global Hooper](https://globalhooper.com/) for the initial inspiration to get my design off the ground.
+1. I also found the [Unique Boutique](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) walk through project of great help. I would continously refer back to it to break down and understand the backend end funcitionality for my own project.
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+# My Disclaimer 
+* This project is for educational purposes only.
+
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
 
