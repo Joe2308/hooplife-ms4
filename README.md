@@ -322,15 +322,15 @@ Users will be sent a confirmation email that their order has been received after
 ## Features to add for future releases:
 There are some features that I would love to implement on future releases:
 
-1. #### Social Media Sign Functionality:
+### Social Media Sign Functionality:
 Allow returning user's to sign in more quickly and securely using social accounts.
-2. #### Suggested Products:
+### Suggested Products:
 Suggest products to returning users based on their order history.
-3. #### Order tracking and fullfillment functionality:
+### Order tracking and fullfillment functionality:
 Allow users to track to orders and allow admin to manage orders and shipping.
-4. #### Inventory:
+### Inventory:
 Implement functionality to allow users to implement inventory checks automatically and apply the appropriate 'only 4 left' or 'sold out' messages to the product template. Also allow users to be notified when a product is back in stock.
-4. #### Discount Codes: 
+### Discount Codes: 
 Implement functionality to check if a product has a certain amount left in stock against its original stock count. If the product is selling poorly use a 3rd party api to generate coupon codes to allow user's to avail of disounts.
 
 ## **[BACK TO TOP](#content-quick-links)** *
