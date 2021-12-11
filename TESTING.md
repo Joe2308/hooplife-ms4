@@ -6,9 +6,11 @@
 ## [Manual Tests](#manual-testing)
 ## [Authenticaton](#user-authentication)
 ## [Forms](#form-validation)
+## [Bag](#shopping-bag)
+## [Checkout](#checking-out)
+## [Email](#emails)
 ## [Modals](#modal-testing)
 ## [CRUD](#crud-testing)
-## [Security](#security-features)
 ## [Bugs](#bugs-test)
 ## [RETURN TO README](https://github.com/Joe2308/sneakerfans-ms3/blob/main/README.md)
 
@@ -134,6 +136,24 @@ I used template if statements to hide some elements of the site from non admin u
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+## Shopping Bag:
+* The shopping bag page has been tested to show all products and product totals 
+* User can update quantites and sizes and also delete items in their bag
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+## Checking Out:
+* The checkout page has been tested to ensure invalid form info or credit card details cannot be used 
+* The checkout process has been tested thoroughly to ensure the order is processed and sent to the user's profile
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+## Emails:
+* The sign up process has been testing to ensure that account verification emails are sent to the email the user signed up with 
+* When a user completes the checkout process they will receive an email to let them know their order has been processed.
 
 ### Modal Testing
 Defensive programming has been used to make sure a user does not delete data by accident. To achieve this all delete buttons have been wired up to modals to ask the user if they are sure they want to delete. Modals have been checked to see if their buttons work logically. The cancel button closes the modal while the delete button removes the data from the datbase and redirects the user to the previous page which they came from.

@@ -13,7 +13,6 @@ HoopLife aims to unite fans of basketball fashion and accessories around the wor
 ## [FEATURES](#available-features)
 ## [SITEMAP](#sitemap-layout)
 ## [DATABASE](#database-schema)
-## [SECURITY](#security-features)
 ## [TECHNOLOGIES](#technologies-used)
 ## [TESTING](#testing-steps)
 ## [DEPLOYMENT](#deployment-process)
