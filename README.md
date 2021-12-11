@@ -344,7 +344,7 @@ The site map was designed using [Lucid Chart](https://www.lucidchart.com/pages/)
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
 
-# Data Modelling: 
+# Database Schema: 
 
 ## Profiles App
 ![user profile model](wireframes/userprofile-model.png)
