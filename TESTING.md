@@ -167,10 +167,7 @@ I have inspected the website on all devices to ensure its functionality meets CR
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
 
-## Security Features: 
 
-
-![Password hash](wireframes/password.png)
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
