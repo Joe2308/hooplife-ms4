@@ -50,6 +50,14 @@ My initial wireframes and database schemas were sketched on paper and when I was
 ## Admin & Store Management user stories:
 ![Admin](wireframes/user-story-5.png)
 
+
+## Reviews user stories:
+![Admin](wireframes/user-story-6.png)
+
+
+## Wishlist user stories:
+![Admin](wireframes/user-story-7.png)
+
 ## Strategy:
 ### What am I making?
 A website/app that offers users to sign up/ Login/ Browse products & purchase products/ Write data to the database in the form of reviews/ view, edit and delete their orders and order history/ Add and remove products to a wishlist and checkout bag/ Receive confirmation emails/ Checkout securely using Stripe payments. 
@@ -301,7 +309,7 @@ New user's may sign up for an account for a better user experience and also to a
 ### Log in
 Returning users may log in using built in Django allauth functionality. Crispy forms has been used all forms on the website.
 
-![SNEAKERFANS](wireframes/log-in.png)
+![SNEAKERFANS](wireframes/login.png)
 
 ### Footer
 I have added social media links and contact details in the footer. All social media icons are clickable and work in external tabs.
@@ -318,7 +326,23 @@ There are some features that I would love to implement on future releases:
 Allow returning user's to sign in more quickly and securely using social accounts.
 2. #### Suggested Products:
 Suggest products to returning users based on their order history.
-3. 
+3. #### Order tracking and fullfillment functionality:
+Allow users to track to orders and allow admin to manage orders and shipping.
+4. #### Inventory:
+Implement functionality to allow users to implement inventory checks automatically and apply the appropriate 'only 4 left' or 'sold out' messages to the product template. Also allow users to be notified when a product is back in stock.
+4. #### Discount Codes: 
+Implement functionality to check if a product has a certain amount left in stock against its original stock count. If the product is selling poorly use a 3rd party api to generate coupon codes to allow user's to avail of disounts.
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+# Sitemap Layout
+The site map was designed using [Lucid Chart](https://www.lucidchart.com/pages/)
+
+![Sitemap](wireframes/sitemap.png)
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
 
 # Data Modelling: 
 
@@ -335,5 +359,12 @@ Suggest products to returning users based on their order history.
 
 ![Order Line Item model](wireframes/order-line-item-model.png)
 
+## Review App
+![Review model](wireframes/review-model.png)
+
+## Wishlist App
+![Wishlist model](wireframes/wishlist-model.png)
+
+![WishlistItem model](wireframes/wishlist-item-model.png)
 
 
