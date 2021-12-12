@@ -1,11 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Review
-from .forms import Add_ReviewForm
 from django.contrib import messages
-from products.models import Product
-from profiles.models import UserProfile
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
+from products.models import Product
+from profiles.models import UserProfile
+from .models import Review
+from .forms import Add_ReviewForm
 
 
 # Credit idea for Reviews https://youtu.be/IVyc06bASSg

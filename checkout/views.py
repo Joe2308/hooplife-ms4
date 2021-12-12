@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse
 )
@@ -12,8 +13,6 @@ from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from .forms import OrderForm
 from .models import OrderLineItem, Order
-
-import json
 
 
 @require_POST
@@ -112,7 +111,7 @@ def checkout(request):
                 currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with 
+        # Attempt to prefill the form with
         # any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
