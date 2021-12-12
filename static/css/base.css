@@ -5,10 +5,6 @@
 * Browsers: last 4 version
 */
 
-html {
-    height: 100%;
-}
-
 /* Navbar */
 .fixed-top,
 .navbar {
@@ -353,8 +349,8 @@ a.category-badge>span.badge:hover {
     }
 
     body {
-        height: calc(100vh - 116px);
-    }
+        margin-bottom: 190px !important;
+      }
 
     #delivery-banner h4 {
         font-size: 1.2rem;
@@ -421,12 +417,22 @@ a.category-badge>span.badge:hover {
 }
 
 /* Footer */
-footer {
-    width: 100% !important;
+
+/* Sticky Footer */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 215px; 
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #000;
-    min-height: 100px;
     padding-bottom: 15px;
-}
+  }
 
 footer h3 {
     margin: 15px;
@@ -462,7 +468,8 @@ footer h3 {
     opacity: 0.8;
 }
 
-.footer .copyright {
+.copyright {
     font-size: 1.2rem;
     color: #fff;
 }
+
