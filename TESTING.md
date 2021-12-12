@@ -108,10 +108,12 @@ I carried out exstensive testing to make sure no user error caused the site to m
 1. **Changing to a url that does not exists**: 
 This gave me a 404 error which lets the user know there is no such page and guides them to the home page. 
 
+![404 error](wireframes/error.png)
+
 2. **Changing a user url to an admin url**:
 While logged in or authenticated if a user tries to change a url to a url that only admin can access. They are given a warning message that "Only admin can do that!".
 
-![404 error](wireframes/admin-auth.png)
+![Authentication](wireframes/admin-auth.png)
 
 3. **Adding Reviews and Wishlists**:
 Any action that requires a user to be authenticated will guide them to the sign up form. The login decorator and templating syntax has been used to achieve user authentication.
