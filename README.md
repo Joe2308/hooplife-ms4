@@ -4,7 +4,8 @@
 
 This project is an Ecommerce store for people who wish to view and purchase the latest on on and off court basketball fashion. Basketball is the 3rd most watched and played sport globally, with millions of followers around the world. In western cultures basketball has also shaped the world of fashion and music with many celebrities sporting basketball attire in their day to day wardrobe. 
 
-HoopLife aims to unite fans of basketball fashion and accessories around the world. We stock, sell and ship the most coveted brands of in game and retro clothing any basketball fan could wish for. Come visit our website. ## [HoopLife](https://ms4-hooplife.herokuapp.com/)
+HoopLife aims to unite fans of basketball fashion and accessories around the world. We stock, sell and ship the most coveted brands of in game and retro clothing any basketball fan could wish for. Come visit our website. 
+## [HoopLife](https://ms4-hooplife.herokuapp.com/)
 
 ![HoopLife](wireframes/home-responsive.png)
 
@@ -104,7 +105,7 @@ As well as creating an attractive secure and responisve webiste all care will be
 1. A product details page
 1. Divide products in categories and order by price and rating
 1. An attractive home page that shows user's immediately upon landing what HoopLife is all about. 
-1. Appriate call to action buttons to guide user's toward  a successful checkout.
+1. Appropriate call to action buttons to guide user toward  a successful checkout.
 1. Social media icons and links
 1. Admin product management
 
@@ -207,7 +208,7 @@ I have used a fixed navigation bar to allow users to move to any other section f
 I have placed the priority content on the home page so the user sees this first.
 I have arranged the supporting content in order of priority in additional sections. 
 Each section links to the most important items to engage users and encourage a conversion
-in the form of a successfully checkout and sales funnel completion.
+in the form of a successfull checkout and sales funnel completion.
 
 ### Elements that have priority
 1. Navigation menu with fixed scrolling.
@@ -227,7 +228,7 @@ My navbar and footer are also black with white text. I choose these colors for t
 For all fonts I have use Kanit in black text with some text elements muted. I browsed through google fonts and this one stood out to me for it's elegant and slightly retro look.
 
 ### Images 
-The home page uses a hero image of young cool model wearing retro basketball apparel. Basketball is not only a sport but also a culture and fashion made popular by many of today's hip hop and music stars such as Drake and Post Malone.
+The home page uses a hero image of a young cool model wearing retro basketball apparel. Basketball is not only a sport but also a culture and fashion made popular by many of today's hip hop and music stars such as Drake and Post Malone.
 
 The home page also features two hero images of professional basketball athletes which will entice players who are serious about the sport and their gear. 
 All other images come from database product entries. 
@@ -265,7 +266,7 @@ The all products page uses bootstrap cards to render product images and details 
 ![HoopLife](wireframes/products-responsive.png)
 
 ### Product Details
-When a user clicks on a product they are brought to the product details page where they have the option of choosing quantities and adding the product to their shopping bag. There is also the option for users to read reviews on this page if they exist or adding a review if they are a logged in user. Logged in users can also add products to their wishlist from the product details page. The wishlist can then be view in their account dropdown.
+When a user clicks on a product they are brought to the product details page where they have the option of choosing quantities and adding the product to their shopping bag. There is also the option for users to read reviews on this page if they exist or adding a review if they are a logged in user. Logged in users can also add products to their wishlist from the product details page. The wishlist can then be viewed in their account dropdown.
 
 ![HoopLife](wireframes/product-detail-responsive.png)
 
@@ -321,12 +322,12 @@ Users will be sent a confirmation email that their order has been received after
 ## Features to add for future releases:
 There are some features that I would love to implement on future releases:
 
-### Social Media Sign Functionality:
-Allow returning user's to sign in more quickly and securely using social accounts.
+### Social Media Sign In Functionality:
+Allow returning users to sign in more quickly and securely using social accounts.
 ### Suggested Products:
 Suggest products to returning users based on their order history.
 ### Order tracking and fullfillment functionality:
-Allow users to track to orders and allow admin to manage orders and shipping.
+Allow users to track their orders and allow admin to manage orders and shipping.
 ### Inventory:
 Implement functionality to allow users to implement inventory checks automatically and apply the appropriate 'only 4 left' or 'sold out' messages to the product template. Also allow users to be notified when a product is back in stock.
 ### Discount Codes: 
@@ -574,6 +575,7 @@ The media files for the deployed site are hosted in AWS S3 Bucket. In order to s
 * Group
 * Access Policy
 * User
+
 Once these settings are implemented, AWS needs to be connected to Django using the following steps:
 
 1. Install boto3, django-storages and update the requirements.txt file.
@@ -601,7 +603,7 @@ I used YouTube tutorials and slack research to get good ideas for my wishlist mo
 I used Stack overflow for advice when I was stuck on a problem.
 
 ## [Slack](https://app.slack.com/client/T0L30B202)
-Fellow students offered excellent advice and solution on the code institue thread on Slack.
+Fellow students offered excellent advice and solutions on the code institute thread on Slack.
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
@@ -610,7 +612,7 @@ Fellow students offered excellent advice and solution on the code institue threa
 1. I would like to acknowledge my mentor [Guido Cecilio](https://code-institute-room.slack.com/team/U4ALPK7UG) for his help with keeping the design consistent and also for his guidance on getting my add to wishlist functionality correct.
 1. I would like to acknowledge [Natasha Clerkin](https://github.com/natashaclerkin/singularartistsMS1) for inspiration from her fantastic README.md file. 
 1. I would like to acknowledge [Global Hooper](https://globalhooper.com/) for the initial inspiration to get my design off the ground.
-1. I also found the [Unique Boutique](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) walk through project of great help. I would continously refer back to it to break down and understand the backend end funcitionality for my own project.
+1. I also found the [Unique Boutique](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) walk through project of great help. I would continously refer back to it to break down and understand the backend end functionality for my own project.
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">

@@ -12,7 +12,7 @@
 ## [Modals](#modal-testing)
 ## [CRUD](#crud-testing)
 ## [Bugs](#bugs-test)
-## [RETURN TO README](https://github.com/Joe2308/sneakerfans-ms3/blob/main/README.md)
+## [RETURN TO README](https://github.com/Joe2308/hooplife-ms4/blob/main/README.md)
 
 ## User story testing:
 1. **As a fan of basketball** I am looking for a website that sells basketball related products and clothing. 
@@ -22,7 +22,7 @@
 
 4. **As a visitor** I want to be able to register for an account to view my order history
 
-5. **As a user** I want to be able to log out an in easily
+5. **As a user** I want to be able to log out and in easily
 
 6. **As a user** I want to receive confirmation emails
 
@@ -77,14 +77,14 @@ For this project I decided to use [Bootstrap](https://getbootstrap.com/). Its gr
 
 ### Call to action buttons:
 I checked and rechecked all buttons were working on all devices and were leading to the correct sections of the website. It was also important that I laid out 
-my CTA choices in order of priorty to my user stories with a button to encourage new visitors to sign up being the most important.
+my CTA choices in order of priorty.
 
 ### External links:
 I made sure to check that all links and social media links were directed to the correct URLS and also that my target="_blank" attribute was working. 
 All external links open in a new browser tab.
 
 ### Internal links:
-I made sure to check that all interal links were working correctly to ensure to led to the correct destinations and that there were no broken links. I also checked that using browser back and forward buttons did not cause any errors or break the website.
+I made sure to check that all interal links were working correctly to ensure they led to the correct destinations and that there were no broken links. I also checked that using browser back and forward buttons did not cause any errors or break the website.
 
 ### Lighthouse performance test:
 ![Lighhouse test](wireframes/lighthouse.png)
@@ -109,12 +109,12 @@ I carried out exstensive testing to make sure no user error caused the site to m
 This gave me a 404 error which lets the user know there is no such page and guides them to the home page. 
 
 2. **Changing a user url to an admin url**:
-While logged or authenticated if a user tries to change a url to a url that only admin can access. They are given a warning message that "Only admin can do that!".
+While logged in or authenticated if a user tries to change a url to a url that only admin can access. They are given a warning message that "Only admin can do that!".
 
 ![404 error](wireframes/admin-auth.png)
 
 3. **Adding Reviews and Wishlists**:
-Any action that requires a user to be authenticated will guide them to the sign up form. The login decorator and templating syntax has been used to acheieve user authentication.
+Any action that requires a user to be authenticated will guide them to the sign up form. The login decorator and templating syntax has been used to achieve user authentication.
 
 
 ### Object Id validation:
@@ -139,7 +139,7 @@ I used template if statements to hide some elements of the site from non admin u
 
 ## Shopping Bag:
 * The shopping bag page has been tested to show all products and product totals 
-* User can update quantites and sizes and also delete items in their bag
+* Users can update quantites and sizes and also delete items in their bag
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
@@ -152,7 +152,7 @@ I used template if statements to hide some elements of the site from non admin u
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
 
 ## Emails:
-* The sign up process has been testing to ensure that account verification emails are sent to the email the user signed up with 
+* The sign up process has been tested to ensure that account verification emails are sent to the email the user signed up with 
 * When a user completes the checkout process they will receive an email to let them know their order has been processed.
 
 ### Modal Testing
