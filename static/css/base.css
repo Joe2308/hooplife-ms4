@@ -328,6 +328,12 @@ a.category-badge>span.badge:hover {
         padding-right: 4px;
     }
 
+    .card-img-top {
+        height: 300px !important;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
@@ -403,6 +409,12 @@ a.category-badge>span.badge:hover {
     i {
         font-size: 14px !important;
         padding: 5px;
+    }
+
+    .card-img-top {
+        height: 200px !important;
+        -o-object-fit: contain;
+        object-fit: contain;
     }
 
     .swap {
