@@ -335,7 +335,7 @@ a.category-badge>span.badge:hover {
     }
 
     .dropdown-item {
-        padding: 0.25rem 0.5rem;
+        padding: 0.25rem 0.25rem;
     }
 
     .card-img-top {

@@ -60,7 +60,7 @@ All CSS code passed using the [W3C CSS validator](https://jigsaw.w3.org/css-vali
 
 ![PEP8 validation](wireframes/pep8.png)
 All code was checked for valid indentation, whitespace, blank line space and line length using 
-the [PEP8 validator](http://pep8online.com/).
+the [PEP8 validator](http://pep8online.com/). There are still a few warnings for unused modules but it was very near the end of my project and I did not want to delete something that may or may not have effected functionality at that late stage in the project.
 
 ### **Javascript Validation**:
 
