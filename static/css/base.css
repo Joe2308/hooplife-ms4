@@ -79,6 +79,12 @@ body {
     object-fit: contain;
 }
 
+.card-img-top {
+    height: 300px !important;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
 .card-fixed2 {
     max-height: 400px !important;
 }
