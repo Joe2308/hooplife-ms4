@@ -4,6 +4,7 @@
 ## [Users](#user-story-testing)
 ## [Validation](#code-validation)
 ## [Manual Tests](#manual-testing)
+## [Automated Tests](#automated-testing)
 ## [Authenticaton](#user-authentication)
 ## [Forms](#form-validation)
 ## [Bag](#shopping-bag)
@@ -98,6 +99,16 @@ I found that testing with lighthouse generated higher scores in incognito mode d
 ![Accessiblity test](wireframes/accessibility.png)
 
 I used [a11y](https://color.a11y.com/) to make sure my color contrasts between fonts and backgrounds was acceptable without excessively comprising my vision of the website final design.
+
+## **[BACK TO TOP](#content-quick-links)** *
+<hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
+
+## Automated Testing
+
+When I fully completed manual testing on all devices I was pretty much at the deadline for submitting this project. For that reason I did not get to try out automated testing on every view function and form. I did get to carry out some automated testing on the products app. I checked my product management form for validation. And I checked that my product template was returning a 200 response status. At this point I made the decision to refactor some CSS to make my project as visually appealing as possible before submission. I will certainly delve deeper into automated testing as I continue to work on this application in the future. 
+
+![Product View Automated Test](wireframes/test-views.png)
+![Product Form Automated Test](wireframes/test-forms.png)
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
