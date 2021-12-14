@@ -101,6 +101,11 @@ body {
     background-color: #eaeaea !important;
 }
 
+.update-link,
+.remove-item {
+        cursor: pointer ;
+}
+
 /* from Bulma */
 .icon {
     -webkit-box-align: center;
@@ -405,11 +410,6 @@ a.category-badge>span.badge:hover {
     .hero-home {
         min-height: 400px;
         background-position-x: 25%;
-    }
-
-    .update-link,
-    .remove-item {
-        cursor: pointer;
     }
 }
 
