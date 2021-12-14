@@ -55,6 +55,7 @@
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                            {% with product.has_sizes as s %}
                             {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
@@ -187,7 +188,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <img src="{% static 'images/hooplife-logo3.png' %}" height="50" alt="HoopLife logo">
+                <img src="{% static 'images/hooplife-logo3.png' %}" height="50" width="63" alt="HoopLife logo">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
