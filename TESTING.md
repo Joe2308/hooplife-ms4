@@ -74,7 +74,7 @@ All Javascript code was validated using [Jshint validator](https://jshint.com/).
 ## Manual Testing:
 
 ### Responsive Design: 
-For this project I decided to use [Bootstrap](https://getbootstrap.com/). Its grid system allows for excellent responsive designs. I used [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) to check how my application was looking on all screen sizes and adjusted as necessary. I had to used minimal media queries in my css code.
+For this project I decided to use [Bootstrap](https://getbootstrap.com/). Its grid system allows for excellent responsive designs. I used [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) to check how my application was looking on all screen sizes and adjusted as necessary. I had to use minimal media queries in my css code.
 
 ### Call to action buttons:
 I checked and rechecked all buttons were working on all devices and were leading to the correct sections of the website. It was also important that I laid out 
@@ -114,7 +114,7 @@ When I fully completed manual testing on all devices I was pretty much at the de
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
 
 ## User Authentication:
-I carried out exstensive testing to make sure no user error caused the site to malfunction. To acheieve this I would check all urls available to non logged in and logged in users and manually change them in the browser. I got the following results: 
+I carried out exstensive testing to make sure no user error caused the site to malfunction. To achieve this I would check all urls available to non logged in and logged in users and manually change them in the browser. I got the following results: 
 
 1. **Changing to a url that does not exists**: 
 This gave me a 404 error which lets the user know there is no such page and guides them to the home page. 
@@ -131,7 +131,7 @@ Any action that requires a user to be authenticated will guide them to the sign 
 
 
 ### Object Id validation:
-If an Object Id from the database is not valid the user will get a 400 bad request. I tested this by manually changing the object id to an unknown id in the browser search bar. 
+If an Object Id from the database is not valid the user will get a 404 error. I tested this by manually changing the object id to an unknown id in the browser search bar. 
 
 ### Features Available To Non Registerd Users:
 I used if statements in my templates to hide some elements of the navigation bar from non registered users. I manually tested this to make sure everything worked as expected.
@@ -159,6 +159,7 @@ I used template if statements to hide some elements of the site from non admin u
 
 ## Checking Out:
 * The checkout page has been tested to ensure invalid form info or credit card details cannot be used 
+* It is important to note that I have used the test version of Stripe and so it will only accept a test credit card details. Type 4242424242 in that order until all credit card details are filled out.
 * The checkout process has been tested thoroughly to ensure the order is processed and sent to the user's profile
 
 ## **[BACK TO TOP](#content-quick-links)** *
@@ -190,7 +191,9 @@ I have inspected the website on all devices to ensure its functionality meets CR
 
 * One bug that caused me some concern was my in my add to wishlist functionality. If a user added an item to their wishlist then no other user could add this item. I rectified the problem by adding an instance of the user to the wishlist when it was being created. I had to amend my wishlist model to use a oneToOneField using the built in django auth User model.
 
-* I have checked the dev tools console and python interperater and there do not appear to any unresolved errors in the application. However if time allowed there are many things I would like to tidy up in form of continuity of image size across all templates.
+* There is one bug remaining on the shopping bag page. When I refactored my shopping bag for smaller screens sizes the increment and decrement buttons on desktop are not disabling. This is due to Javascript searching the DOM for the applied unique ID. I made attempts to change the IDs to shared class names however I could not get this functionality to work effectively on Desktop. I ask fellow students on slack but no one seemed to be able to fix the issue successfully. I will continue to resolve this issue as I seek to enhance my Javascript skills.
+
+* I have checked the dev tools console and python interperater and there do not appear to any unresolved errors other than those noted above in the application. However if time allowed there are many things I would like to tidy up in form of continuity of image size across all templates.
 
 
 ## **[BACK TO TOP](#content-quick-links)** *

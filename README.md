@@ -2,7 +2,7 @@
 
 ![HoopLifeLogo](wireframes/hooplife-logo.png)
 
-This project is an Ecommerce store for people who wish to view and purchase the latest on on and off court basketball fashion. Basketball is the 3rd most watched and played sport globally, with millions of followers around the world. In western cultures basketball has also shaped the world of fashion and music with many celebrities sporting basketball attire in their day to day wardrobe. 
+This project is an Ecommerce store for people who wish to view and purchase the latest on and off court basketball fashion. Basketball is the 3rd most watched and played sport globally, with millions of followers around the world. In western cultures basketball has also shaped the world of fashion and music with many celebrities sporting basketball attire in their day to day wardrobe. 
 
 HoopLife aims to unite fans of basketball fashion and accessories around the world. We stock, sell and ship the most coveted brands of in game and retro clothing any basketball fan could wish for. Come visit our website. 
 ## [HoopLife](https://ms4-hooplife.herokuapp.com/)
@@ -62,14 +62,14 @@ My initial wireframes and database schemas were sketched on paper and when I was
 ### What am I making?
 A website/app that offers users to sign up/ Login/ Browse products & purchase products/ Write data to the database in the form of reviews/ view, edit and delete their orders and order history/ Add and remove products to a wishlist and checkout bag/ Receive confirmation emails/ Checkout securely using Stripe payments. 
 Admin will be able to mangage products by editing, adding or deleting either directly from the site manage products page or in the admin dashboard. 
-The site will cater for basketball lifestyle culture fans as well as athletes. A small selection of highly demanded products are on offer and these have been choosen from competitor market research sales using reliable software. We only stock items that we know will sell in colors and fabrics that have a proven track record among consumers.
-As well as creating an attractive secure and responisve webiste all care will be taken to ensure a quick sales funnel for users. To ensure a low abandon cart rate the checkout system is simple and effective with user delivery details also saved to their profile to ensure a speedy checkout on their return to the webiste.
+The site will cater for basketball lifestyle culture fans as well as athletes. A small selection of highly demanded products are on offer and these have been chosen from competitor market research sales using reliable software. We only stock items that we know will sell in colors and fabrics that have a proven track record among consumers.
+As well as creating an attractive secure and responisve website all care will be taken to ensure a quick sales funnel for users. To ensure a low abandon cart rate the checkout system is simple and effective with user delivery details also saved to their profile to ensure a speedy checkout on their return to the website.
 
 ### Website business goals
 1. Create a website that caters directly for basketball fans as opposed to cluttering the site with all sporting genres.
 1. Sell products that have proven high sales rates and that are light weight and easy to ship worldwide 
 1. Make user experience a priority in way of an attractive site with images of transparent background that blend into the page body.
-1. Guide user's quickly and efficiently through the sales funnel to a successful checkout.
+1. Guide users quickly and efficiently through the sales funnel to a successful checkout.
 1. Build a new brand based on consumer engagement and trust. 
 1. Use social media links to grow our presence online and increase organic traffic.
 
@@ -104,8 +104,8 @@ As well as creating an attractive secure and responisve webiste all care will be
 1. A checkout page which allows a user to increment or decrement prouduct quantities before checking out
 1. A product details page
 1. Divide products in categories and order by price and rating
-1. An attractive home page that shows user's immediately upon landing what HoopLife is all about. 
-1. Appropriate call to action buttons to guide user toward  a successful checkout.
+1. An attractive home page that shows users immediately upon landing what HoopLife is all about. 
+1. Appropriate call to action buttons to guide users toward  a successful checkout.
 1. Social media icons and links
 1. Admin product management
 
@@ -116,7 +116,7 @@ As well as creating an attractive secure and responisve webiste all care will be
 1. The most important information is given to the user when they need it
 1. Simple checkout process
 1. The ability to save user info
-1. High quality products that user's will keep coming back for
+1. High quality products that users will keep coming back for
 
 
 ## Scope:
@@ -175,7 +175,7 @@ Non account holders may access:
 1. The header also contains the company logo which has a return to home link.
 
 Account holders will gain additonal access to:
-1. My Profile - (profile page to show all of user's orders and delivery details)
+1. My Profile - (profile page to show all of the users orders and delivery details)
 1. Add reviews - (form to allow user to add reviews)
 1. Wishlist - Add and remove items from a wishlist page
 1. Log Out
@@ -185,7 +185,7 @@ Admin will gain access to:
 1. Manage reviews - (Admin can delete innappropriate or offensive reviews)
 1. Django admin CMS - (Fully customisable backend content management system where admin can control all database models from accounts to products and emails)
 
-I have used a fixed navigation bar to allow users to move to any other section from their current section. Navigation has been kept simple and obvious. There are also call to action buttons and text to encourage new visitors to create an account. 
+I have used a fixed navigation bar to allow users to move to any other section from their current section. Navigation has been kept simple and obvious. There are also call to action buttons and text to encourage new visitors to complete a purchase. 
 
 ## Skeleton:
 
@@ -222,7 +222,7 @@ in the form of a successfull checkout and sales funnel completion.
 ### Colors
 The website is inspired by [Global Hooper](https://globalhooper.com/). I always liked the simple retro style of the site. I used Kanit as my font for its elegant and retro style. 
 I have stuck with a white body background except on the home page where I used touches of light grey to accent the navbar and some backgrounds for headings and call to action buttons. 
-My navbar and footer are also black with white text. I choose these colors for the clean look of black and white while the light grey adds a retro touch while also allowing all colors to blend nicely for the visually impaired.
+My footer is black with white text. I chose these colors for the clean look of black and white while the light grey adds a retro touch while also allowing all colors to blend nicely for the visually impaired.
 
 ### Fonts
 For all fonts I have use Kanit in black text with some text elements muted. I browsed through google fonts and this one stood out to me for it's elegant and slightly retro look.
@@ -234,14 +234,14 @@ The home page also features two hero images of professional basketball athletes 
 All other images come from database product entries. 
 I have created neat bootstrap cards of fixed height to display all images with continuity. When the image cards are clicked the user is brought to the full product detail page where they can choose size and quantity before adding the product to their bag. 
 
-When planning for this project I choose all my images carefully and spent some time on photoshop cleaning them up and making their backgrounds transparent so they fit into the website background nicely.
+When planning for this project I chose all my images carefully and spent some time on photoshop cleaning them up and making their backgrounds transparent so they fit into the website background nicely.
 I also used photoshop to design the company logo which is a combination of a basketball and a palmtree. Palmtrees can be seen on many of the cool beach street ball courts around the USA.
 
 ![HoopLifeLogo](wireframes/hooplife-logo.png)
 
 ### Other themes
 1. Use of relevant font awesome icons to add a professional touch
-1. Free delivery banner based on shopping bag total to urge user's to purchase more products
+1. Free delivery banner based on shopping bag total to urge users to purchase more products
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
@@ -266,7 +266,7 @@ The all products page uses bootstrap cards to render product images and details 
 ![HoopLife](wireframes/products-responsive.png)
 
 ### Product Details
-When a user clicks on a product they are brought to the product details page where they have the option of choosing quantities and adding the product to their shopping bag. There is also the option for users to read reviews on this page if they exist or adding a review if they are a logged in user. Logged in users can also add products to their wishlist from the product details page. The wishlist can then be viewed in their account dropdown.
+When a user clicks on a product they are brought to the product details page where they have the option of choosing quantities and adding the product to their shopping bag. There is also the option for users to read reviews on this page if they exist or add a review if they are a logged in user. Logged in users can also add products to their wishlist from the product details page. The wishlist can then be viewed in their account dropdown.
 
 ![HoopLife](wireframes/product-detail-responsive.png)
 
@@ -294,22 +294,22 @@ Non logged in users have the option to read reviews for each product and logged 
 ### Shopping Bag
 Website vistitors and authenticated users alike can add products to their shopping bag and adjust quantities. 
 
-![SNEAKERFANS](wireframes/bag.png)
+![HoopLife](wireframes/bag.png)
 
 ### Checkout
-Website vistitors and authenticated users alike can securely checkout using Stipe. An instance of the user's delivery details for that order is automatically saved to users profile page.
+Website vistitors and authenticated users alike can securely checkout using Stripe. An instance of the user's delivery details for that order is automatically saved to user's profile page.
 
-![SNEAKERFANS](wireframes/checkout.png)
+![HoopLife](wireframes/checkout.png)
 
 ### Sign Up
-New user's may sign up for an account for a better user experience and also to access some features such as saving checkout details, adding reviews and creating wishlists. I have used crispy forms to render a more attractive template form.
+New users may sign up for an account for a better user experience and also to access some features such as saving checkout details, adding reviews and creating wishlists. I have used crispy forms to render a more attractive template form.
 
-![SNEAKERFANS](wireframes/sign-up.png)
+![HoopLife](wireframes/sign-up.png)
 
 ### Log in
-Returning users may log in using built in Django allauth functionality. Crispy forms has been used all forms on the website.
+Returning users may log in using built in Django allauth functionality. Crispy forms has been used on all forms on the website.
 
-![SNEAKERFANS](wireframes/login.png)
+![HoopLife](wireframes/login.png)
 
 ### Footer
 I have added social media links and contact details in the footer. All social media icons are clickable and work in external tabs.
@@ -331,7 +331,7 @@ Allow users to track their orders and allow admin to manage orders and shipping.
 ### Inventory:
 Implement functionality to allow users to implement inventory checks automatically and apply the appropriate 'only 4 left' or 'sold out' messages to the product template. Also allow users to be notified when a product is back in stock.
 ### Discount Codes: 
-Implement functionality to check if a product has a certain amount left in stock against its original stock count. If the product is selling poorly use a 3rd party api to generate coupon codes to allow user's to avail of discounts.
+Implement functionality to check if a product has a certain amount left in stock against its original stock count. If the product is selling poorly use a 3rd party api to generate coupon codes to allow users to avail of discounts.
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
@@ -511,12 +511,12 @@ The site map was designed using [Lucid Chart](https://www.lucidchart.com/pages/)
 
 6. Create a new superuser with: 'python manage.py createsuperuser'
 
-7. Type python3 manage.py in your terminal to run the app locally.
+7. Type python3 manage.py runserver in your terminal to run the app locally.
 
 ## Deployment to Heroku
 
 ## Note:
-Before deploying to Heroku if you have a large selection of products on an eccommerce store it is worth dumping the product and category models to a json file from your sqlite db, these can then be loaded to the postgres database instead of having to add all products manually after deploying. 
+Before deploying to Heroku if you have a large selection of products on an Eccommerce store it is worth dumping the product and category models to a json file from your sqlite db, these can then be loaded to the postgres database instead of having to add all products manually after deploying. 
 
 To deploy the app to Heroku from the repository, the following steps were actioned:
 
@@ -613,6 +613,7 @@ Fellow students offered excellent advice and solutions on the code institute thr
 1. I would like to acknowledge [Natasha Clerkin](https://github.com/natashaclerkin/singularartistsMS1) for inspiration from her fantastic README.md file. 
 1. I would like to acknowledge [Global Hooper](https://globalhooper.com/) for the initial inspiration to get my design off the ground.
 1. I also found the [Unique Boutique](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) walk through project of great help. I would continously refer back to it to break down and understand the backend end functionality for my own project.
+1. Finally I would like to thank the creators and shareholders of Code Institute. I have always had an interest in web design but up until now I was limited to using Wordpress templates. I am by no means a great developer but I am leaps and bounds ahead of where I started one year ago. I have the base to create a work space and create a unique website. If I don't know something I have learned how and where to find the correct answer and apply it to any project. I look forward to growing my skills, future career and business ideas as a developer!
 
 ## **[BACK TO TOP](#content-quick-links)** *
 <hr style="height:5px;border-width:0;color:gray;background-color: #005b96">
